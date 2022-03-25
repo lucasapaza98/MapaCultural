@@ -1,0 +1,56 @@
+Consignas para el integrador etapa de acompañamiento:
+
+Para esta instancia se deberán crear un proyecto de acceso publico en gitlab (con su cuenta), el cual tenga 2 ramas. Compartiendo en link por mail
+En la medida que vayan subiendo contenido al repositorio deberán asi mismo enviar una notificación al docente, ya sea por mail o configurando el repo para que sea el, el que notifique.
+
+Recuerden darme permisos dentro de su proyecto para que pueda bajarlo y evaluarlo)
+
+Requerimientos:
+
+1er Parte
+
+1.- Creación de un docker con Apache - mysql y PHP (versión standard)
+con un archivo Readme, que contenga las instrucciones de como levantar el mismo, paso a paso.-
+
+2.- Recuerden que solo debe estar en el repositorio lo fundamental del mismo, sin arhivos innecesarios, recuerden utilizar .gitignore (no traer contenido de mysql y demas) . El repositorio en el mejor de los casos solo contendra archivos de textos y no binarios. No debe pesar mas de 2/5Mb
+
+2da Parte
+
+3.- Se deberá crear un script .sh que se pueda correr una vez que este el contenedor arriba que genere la BD , tablas , vistas , triggers y demas.-
+
+4.- Los datos correspondientes a las tablas se encuentran mencionados a continuación, en donde deberán descargar las mismas y realizar una BD que se llame MapaCultural, que contengan las diferentes ofertas que se mencionan para descargar, como salas de cines, teatro, etc. Los datos que bajaran no esta relacionados y usted deberá llevar a cabo la tarea de la normalización de toda la base, es muy importante que así lo pueda desarrollar para poder llevar adelante esta etapa. Recuerde que pueden resultar tablas pivotables, bridge.
+
+Estructura de los archivos a convertir en tablas relacionales podrán ver el mismo en el siguiente link
+
+Salas de Cine
+
+https://datos.gob.ar/dataset/cultura-mapa-cultural-espacios-culturales/archivo/cultura_392ce1a8-ef11-4776-b280-6f1c7fae16ae
+
+Salas de Teatro
+
+https://datos.gob.ar/dataset/cultura-mapa-cultural-espacios-culturales/archivo/cultura_87ebac9c-774c-4ef2-afa7-044c41ee4190
+
+Monumentos Históricos
+
+https://datos.gob.ar/dataset/cultura-mapa-cultural-espacios-culturales/archivo/cultura_5a03b397-a27a-4404-a2ec-d5cce6d1bff2
+
+
+Museos
+
+https://datos.gob.ar/dataset/cultura-mapa-cultural-espacios-culturales/archivo/cultura_4207def0-2ff7-41d5-9095-d42ae8207a5d
+
+
+5.- Una vez realizada la estructura de la base de datos con sus tablas, deberá ingresar los datos a la misma desde los archivos de datos suministrados, para ello podrá realizar un script en .php o sql para que los mismos sean insertados cada uno en las tablas que correspondan evitando duplicidad de información e incosistencias.-
+
+6.- La base resultante luego de dicho proceso, deberá ser exportada y enviada por email para su verificación. Recuerde no subir al repositorio la misma, sería un grave error.
+
+3er Parte
+
+
+7.-  Deberá realizar un entorno en donde un usuario puede elegir una o todas las ofertas culturales, como así también la ubicación /es de donde desea realizar su búsqueda.-
+
+
+Fecha de Presentación del trabajo 11/03/2022
+
+
+
